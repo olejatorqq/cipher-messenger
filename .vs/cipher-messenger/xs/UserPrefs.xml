@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{0BBE2B54-B1DA-4FF1-9CD9-65BF51A49169}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="cipher-messenger/Properties/AssemblyInfo.cs">
+    <Files>
+      <File FileName="cipher-messenger/Program.cs" Line="17" Column="1" />
+      <File FileName="cipher-messenger/MainWindow.cs" Line="1" Column="1" />
+      <File FileName="cipher-messenger/Properties/AssemblyInfo.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="cipher-messenger" expanded="True">
+            <Node name="cipher-messenger" expanded="True">
+              <Node name="UserInterface" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.cipher-messenger PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

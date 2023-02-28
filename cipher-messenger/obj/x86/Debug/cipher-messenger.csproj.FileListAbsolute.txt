@@ -1,0 +1,6 @@
+/home/oleg/Desktop/ProjectsC#/cipher-messenger/cipher-messenger/bin/Debug/cipher-messenger.exe
+/home/oleg/Desktop/ProjectsC#/cipher-messenger/cipher-messenger/bin/Debug/cipher-messenger.pdb
+/home/oleg/Desktop/ProjectsC#/cipher-messenger/cipher-messenger/obj/x86/Debug/cipher-messenger.csproj.AssemblyReference.cache
+/home/oleg/Desktop/ProjectsC#/cipher-messenger/cipher-messenger/obj/x86/Debug/cipher-messenger.csproj.CoreCompileInputs.cache
+/home/oleg/Desktop/ProjectsC#/cipher-messenger/cipher-messenger/obj/x86/Debug/cipher-messenger.exe
+/home/oleg/Desktop/ProjectsC#/cipher-messenger/cipher-messenger/obj/x86/Debug/cipher-messenger.pdb
