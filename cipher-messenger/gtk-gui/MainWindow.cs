@@ -15,6 +15,8 @@ public partial class MainWindow
 
 	private global::Gtk.Label label1;
 
+	private global::Gtk.CheckButton checkbuttonVisiblePassword;
+
 	protected virtual void Build()
 	{
 		global::Stetic.Gui.Initialize(this);
@@ -79,6 +81,17 @@ public partial class MainWindow
 		global::Gtk.Fixed.FixedChild w5 = ((global::Gtk.Fixed.FixedChild)(this.dataGrid[this.label1]));
 		w5.X = 45;
 		w5.Y = 60;
+		// Container child dataGrid.Gtk.Fixed+FixedChild
+		this.checkbuttonVisiblePassword = new global::Gtk.CheckButton();
+		this.checkbuttonVisiblePassword.CanFocus = true;
+		this.checkbuttonVisiblePassword.Name = "checkbuttonVisiblePassword";
+		this.checkbuttonVisiblePassword.Label = global::Mono.Unix.Catalog.GetString("Visible");
+		this.checkbuttonVisiblePassword.DrawIndicator = true;
+		this.checkbuttonVisiblePassword.UseUnderline = true;
+		this.dataGrid.Add(this.checkbuttonVisiblePassword);
+		global::Gtk.Fixed.FixedChild w6 = ((global::Gtk.Fixed.FixedChild)(this.dataGrid[this.checkbuttonVisiblePassword]));
+		w6.X = 299;
+		w6.Y = 110;
 		this.Add(this.dataGrid);
 		if ((this.Child != null))
 		{
@@ -87,5 +100,6 @@ public partial class MainWindow
 		this.Show();
 		this.DeleteEvent += new global::Gtk.DeleteEventHandler(this.OnDeleteEvent);
 		this.buttonLogIn.Clicked += new global::System.EventHandler(this.ClickbuttonLogIn);
+		this.checkbuttonVisiblePassword.Clicked += new global::System.EventHandler(this.ClickedCheckVisiblePassword);
 	}
 }

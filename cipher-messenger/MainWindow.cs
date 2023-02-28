@@ -18,6 +18,7 @@ public partial class MainWindow : Gtk.Window
     {
         if (entryLogin.Text.Length != 0 && entryPassword.Text.Length != 0)
         {
+            //entryPassword.Visibility = true;
             ShowMessageBox($"Логин: {entryLogin.Text}\nПароль: {entryPassword.Text}");
         }
         else
@@ -37,4 +38,16 @@ public partial class MainWindow : Gtk.Window
             md.Destroy();
     }
 
+    protected void ClickedCheckVisiblePassword(object sender, EventArgs e)
+    {
+        if (checkbuttonVisiblePassword.Active)
+        {
+            entryPassword.Visibility = true;
+        }
+        else
+        {
+            entryPassword.Visibility = false;
+        }
+
+    }
 }
