@@ -3,20 +3,89 @@
 
 public partial class MainWindow
 {
+	private global::Gtk.Fixed dataGrid;
+
+	private global::Gtk.Button buttonLogIn;
+
+	private global::Gtk.Entry entryPassword;
+
+	private global::Gtk.Entry entryLogin;
+
+	private global::Gtk.Label label2;
+
+	private global::Gtk.Label label1;
+
 	protected virtual void Build()
 	{
 		global::Stetic.Gui.Initialize(this);
 		// Widget MainWindow
 		this.Name = "MainWindow";
-		this.Title = global::Mono.Unix.Catalog.GetString("MainWindow");
-		this.WindowPosition = ((global::Gtk.WindowPosition)(4));
+		this.Title = global::Mono.Unix.Catalog.GetString("Authorize");
+		this.WindowPosition = ((global::Gtk.WindowPosition)(3));
+		this.Resizable = false;
+		this.AllowGrow = false;
+		this.DefaultWidth = 400;
+		this.DefaultHeight = 200;
+		// Container child MainWindow.Gtk.Container+ContainerChild
+		this.dataGrid = new global::Gtk.Fixed();
+		this.dataGrid.WidthRequest = 400;
+		this.dataGrid.HeightRequest = 200;
+		this.dataGrid.Name = "dataGrid";
+		this.dataGrid.HasWindow = false;
+		// Container child dataGrid.Gtk.Fixed+FixedChild
+		this.buttonLogIn = new global::Gtk.Button();
+		this.buttonLogIn.CanFocus = true;
+		this.buttonLogIn.Name = "buttonLogIn";
+		this.buttonLogIn.UseUnderline = true;
+		this.buttonLogIn.Label = global::Mono.Unix.Catalog.GetString("Log in");
+		this.dataGrid.Add(this.buttonLogIn);
+		global::Gtk.Fixed.FixedChild w1 = ((global::Gtk.Fixed.FixedChild)(this.dataGrid[this.buttonLogIn]));
+		w1.X = 180;
+		w1.Y = 150;
+		// Container child dataGrid.Gtk.Fixed+FixedChild
+		this.entryPassword = new global::Gtk.Entry();
+		this.entryPassword.CanFocus = true;
+		this.entryPassword.Name = "entryPassword";
+		this.entryPassword.IsEditable = true;
+		this.entryPassword.Visibility = false;
+		this.entryPassword.InvisibleChar = '•';
+		this.dataGrid.Add(this.entryPassword);
+		global::Gtk.Fixed.FixedChild w2 = ((global::Gtk.Fixed.FixedChild)(this.dataGrid[this.entryPassword]));
+		w2.X = 120;
+		w2.Y = 100;
+		// Container child dataGrid.Gtk.Fixed+FixedChild
+		this.entryLogin = new global::Gtk.Entry();
+		this.entryLogin.CanFocus = true;
+		this.entryLogin.Name = "entryLogin";
+		this.entryLogin.IsEditable = true;
+		this.entryLogin.InvisibleChar = '•';
+		this.dataGrid.Add(this.entryLogin);
+		global::Gtk.Fixed.FixedChild w3 = ((global::Gtk.Fixed.FixedChild)(this.dataGrid[this.entryLogin]));
+		w3.X = 120;
+		w3.Y = 50;
+		// Container child dataGrid.Gtk.Fixed+FixedChild
+		this.label2 = new global::Gtk.Label();
+		this.label2.Name = "label2";
+		this.label2.LabelProp = global::Mono.Unix.Catalog.GetString("Password");
+		this.dataGrid.Add(this.label2);
+		global::Gtk.Fixed.FixedChild w4 = ((global::Gtk.Fixed.FixedChild)(this.dataGrid[this.label2]));
+		w4.X = 45;
+		w4.Y = 110;
+		// Container child dataGrid.Gtk.Fixed+FixedChild
+		this.label1 = new global::Gtk.Label();
+		this.label1.Name = "label1";
+		this.label1.LabelProp = global::Mono.Unix.Catalog.GetString("Login");
+		this.dataGrid.Add(this.label1);
+		global::Gtk.Fixed.FixedChild w5 = ((global::Gtk.Fixed.FixedChild)(this.dataGrid[this.label1]));
+		w5.X = 45;
+		w5.Y = 60;
+		this.Add(this.dataGrid);
 		if ((this.Child != null))
 		{
 			this.Child.ShowAll();
 		}
-		this.DefaultWidth = 400;
-		this.DefaultHeight = 300;
 		this.Show();
 		this.DeleteEvent += new global::Gtk.DeleteEventHandler(this.OnDeleteEvent);
+		this.buttonLogIn.Clicked += new global::System.EventHandler(this.ClickbuttonLogIn);
 	}
 }
